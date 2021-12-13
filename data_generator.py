@@ -124,10 +124,10 @@ def get_data():
 
 def save_dat():
     r, p = get_data()
-    rob_np = r.numpy()
-    pol_np = p.numpy()
-    df = pd.DataFrame(t_np)
-    df.to_csv("POLLU_data",index=False) #save data to file
-    df.to_csv("ROBER_data",index=False)
+    r_df = pd.DataFrame(r.numpy())
+    p_df = pd.DataFrame(p.numpy())
+    #save data to file
+    p_df.to_csv("POLLU_data",index=False)
+    r_df.to_csv("ROBER_data",index=False)
 
 save_dat()
