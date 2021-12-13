@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-import torchdiffeq.adjoint_odeint as odeint
+from torchdiffeq import odeint_adjoint as odeint
 import pandas as pd
 
 #ROBER system
