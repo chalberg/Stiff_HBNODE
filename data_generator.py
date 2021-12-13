@@ -130,5 +130,4 @@ def save_dat():
     df.to_csv("POLLU_data",index=False) #save data to file
     df.to_csv("ROBER_data",index=False)
 
-#Then, to reload:
-df = pd.read_csv("testfile")
+save_dat()
