@@ -100,7 +100,7 @@ class POLLU(nn.Module):
 
 #initial conditions and time scales
 r0 = torch.as_tensor([1.0, 0.0, 0.0])
-rt = torch.linspace(0, 1e5, 50)
+rt = torch.linspace(1e-5, 1e5, 50)
 
 p0 = torch.zeros(20)
 p0[1]  = 0.2
